@@ -193,9 +193,9 @@ int main(){
 
     if(solved){
         std::cout<<"\n\ngrid_values after solving\n";
-        for(int i = 0; i<9; i++){
-            for(int j = 0; j< 9; j++){
-                std::cout<<grid.get_grid_values()[j + i*9]<<" ";
+        for(int i = 0; i<grid.get_grid_size(); i++){
+            for(int j = 0; j< grid.get_grid_size(); j++){
+                std::cout<<grid.get_grid_values()[j + i*grid.get_grid_size()]<<" ";
             }
             std::cout<<"\n";
         }
